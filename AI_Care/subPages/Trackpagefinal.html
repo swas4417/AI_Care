@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Track Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .dropdown {
+        transition: max-height 0.5s cubic-bezier(0, 0, 1, -0.35);
+        max-height: 0; /* Start collapsed */
+        overflow: hidden; /* Hide overflow */
+        background-color: rgb(192, 193, 192); /* Background color */
+        border-radius: 0 0 20px 20px; /* Match card's bottom border radius */
+        z-index: 1; /* Ensure it stacks above other content */
+      }
+      .dropdown.show {
+        max-height: 100px; /* Adjust as needed for content height */
+      }
+    </style>
+  </head>
+  <body
+    class="relative flex flex-col items-center justify-center min-h-screen bg-cover bg-center bg-no-repeat font-[Poppins] bg-[url('')]"
+  >
+    <h1 class="text-[2.5vw] font-medium uppercase relative mb-[2vw] ml-9">
+      TRACKS
+      <span
+        class="absolute opacity-20 text-[3vw] text-blue-500 -ml-[10vw] top-[0vw]"
+        >SUBJECT</span
+      >
+    </h1>
+
+    <div
+      class="grid grid-cols-2 gap-[3vw] mt-[5vw] w-full max-w-[80vw] gap-y-9 mb-5"
+    >
+      <!-- First Card -->
+      <div class="flex flex-col relative w-[25vw] transform translate-x-[9vw]">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1669842336826-28b52708792a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-[25vw] h-[18vw] rounded-t-[20px] object-cover pic1"
+        />
+        <div
+          class="flex justify-between text-[1.3vw] text-white font-light capitalize cursor-pointer mt-[-4vw] ml-1"
+        >
+          <span>Applications of AI in Computing</span>
+          <a
+            class="Drop"
+            onclick="toggleDropdown('.about', this.querySelector('i'))"
+          >
+            <i class="ri-add-circle-fill text-[2vw] mr-1"></i>
+          </a>
+        </div>
+        <div
+          class="about dropdown hidden text-1vw text-black w-25vw h-full"
+          style="height: 100vh"
+        >
+          Machine Learning and Deep Learning Innovations Natural Language
+          Processing Applications AI in Cybersecurity Ethics and Fairness in AI
+          AI for Fog Computing AI in Cloud Computing AI for Edge Computing
+          Reinforcement Learning Techniques Computer Vision and Image Processing
+          Explainable AI (XAI) AI for IIoT (Industrial Internet of Things) Data
+          Privacy and AI AI-Driven Software Engineering AI in Robotics and
+          Automation Augmented Reality and AI AI for Predictive Analytics AI in
+          Healthcare Computing Quantum Computing and AI AI for Resource
+          Optimization
+        </div>
+      </div>
+
+      <!-- Second Card -->
+      <div
+        class="flex flex-col relative w-[25vw] transform translate-x-[11vw] mb-5"
+      >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1669842336826-28b52708792a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-[25vw] h-[18vw] rounded-t-[20px] object-cover pic2"
+        />
+        <div
+          class="flex justify-between text-[1.3vw] text-white font-light capitalize cursor-pointer mt-[-4vw] ml-1"
+        >
+          <span>AI applications in UAV Networks</span>
+          <a
+            class="Drop2"
+            onclick="toggleDropdown('.about2', this.querySelector('i'))"
+          >
+            <i class="ri-add-circle-fill text-[2vw] mr-1"></i>
+          </a>
+        </div>
+        <div
+          class="about2 dropdown hidden text-[1vw] text-black w-[25vw] p-[1vw]"
+        >
+          AI enabled UAV applications in Autonomous Navigation and Flight
+          Control Computer Vision Techniques for Smart UAVs AI-Enhanced Object
+          Detection and Tracking Swarm Intelligence and Cooperative UAV Systems
+          Machine Learning for Environmental Monitoring AI enabled UAV
+          Applications in Precision Agriculture Data Processing and Analysis for
+          UAV Imagery Ethics and Regulations in UAV AI Applications UAVs in
+          Search and Rescue Operations Security Challenges in UAV Operations and
+          AI Solutions New opportunities/challenges/use cases for UAV-enabled
+          IoT UAV swarming and coordination for IoT deployments UAV-assisted
+          data collection and analytics for IoT applications Protocols and
+          architectures for UAV-enabled MEC Computation offloading for
+          UAV-enabled MEC UAV’s trajectory design for UAV-enabled IoT Spectrum
+          management and multiple access schemes for UAV-enabled IoT Green
+          energy powered UAV-enabled IoT networks MIMO/massive MIMO/millimeter
+          wave technologies for UAV-enabled IoT Quality of Service provisioning
+          for UAV-enabled IoT Network security and information assurance for
+          UAV-enabled IoT
+        </div>
+      </div>
+
+      <!-- Third Card -->
+      <div
+        class="flex flex-col relative w-[25vw] transform translate-x-[9vw] mb-5"
+      >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1669842336826-28b52708792a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-[25vw] h-[18vw] rounded-t-[20px] object-cover pic3"
+        />
+        <div
+          class="flex justify-between text-[1.3vw] text-white font-light capitalize cursor-pointer mt-[-4vw] ml-1"
+        >
+          <span>AI in Astronomy</span>
+          <a
+            class="Drop3"
+            onclick="toggleDropdown('.about3', this.querySelector('i'))"
+          >
+            <i class="ri-add-circle-fill text-[2vw] mr-1"></i>
+          </a>
+        </div>
+        <div
+          class="about3 dropdown hidden text-[1vw] text-black w-[25vw] p-[1vw]"
+        >
+          Machine Learning for Astrophysical Data Analysis Deep Learning in
+          Image Processing for Astronomy AI for Exoplanet Detection and
+          Characterization Time Series Analysis of Astronomical Data AI in
+          Telescope Automation and Control Big Data Challenges in Astronomy
+          AI-Driven Simulations of Cosmic Phenomena Neural Networks for Galaxy
+          Classification AI Applications in Radio Astronomy Machine Learning for
+          Gravitational Wave Detection Predictive Modeling of Stellar Evolution
+          Data Mining Techniques for Large Astronomical Surveys AI for
+          Cosmological Simulations and Modeling Natural Language Processing in
+          Astronomy Research AI in Space Mission Planning and Operations Anomaly
+          Detection in Astronomical Observations AI for Multi-Messenger
+          Astronomy Visualization Techniques for AI-Generated Astronomical Data
+          AI Ethics and Fairness in Astronomy Research Future Trends: Quantum
+          Computing and AI in Astronomy
+        </div>
+      </div>
+
+      <!-- Fourth Card -->
+      <div
+        class="flex flex-col relative w-[25vw] transform translate-x-[11vw] mb-5"
+      >
+        <img
+          src="https://plus.unsplash.com/premium_photo-1669842336826-28b52708792a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8"
+          alt=""
+          class="w-[25vw] h-[18vw] rounded-t-[20px] object-cover pic4"
+        />
+        <div
+          class="flex justify-between text-[1.3vw] text-white font-light capitalize cursor-pointer mt-[-4vw] ml-1"
+        >
+          <span>AI in Renewable Energy</span>
+          <a
+            class="Drop4"
+            onclick="toggleDropdown('.about4', this.querySelector('i'))"
+          >
+            <i class="ri-add-circle-fill text-[2vw] mr-1"></i>
+          </a>
+        </div>
+        <div
+          class="about4 dropdown hidden text-[1vw] text-black w-[25vw] p-[1vw]"
+        >
+          Machine Learning for Renewable Energy Forecasting AI in Smart Grid
+          Management and Optimization Predictive Maintenance for Renewable
+          Energy Systems AI-Driven Energy Storage Solutions Data Analytics for
+          Solar Energy Performance Wind Energy Prediction and Optimization using
+          AI AI in Electric Vehicle Integration with Renewable Energy
+          Decentralized Energy Management using Blockchain and AI AI for Energy
+          Demand Response Strategies Computer Vision for Solar Panel Inspection
+          Optimizing Energy Efficiency in Buildings with AI AI in Hydropower
+          Generation and Management AI Solutions for Biomass Energy Optimization
+          Artificial Intelligence for Renewable Energy Microgrids Environmental
+          Impact Assessment using AI Techniques Integration of AI in Climate
+          Change Mitigation Strategies AI and IoT for Enhanced Energy Monitoring
+          Systems Smart Renewable Energy System Design with AI Data-Driven
+          Policy Making in Renewable Energy Future Trends: AI and
+          Next-Generation Renewable Technologies
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function toggleDropdown(className, iconElement) {
+        const dropdown = document.querySelector(className);
+        dropdown.classList.toggle("hidden");
+        dropdown.classList.toggle("show");
+
+        // Switch icon
+        if (dropdown.classList.contains("show")) {
+          dropdown.classList.add("show");
+          iconElement.classList.remove("ri-add-circle-fill");
+          iconElement.classList.add("ri-close-circle-fill");
+        } else {
+          dropdown.classList.remove("show");
+          iconElement.classList.remove("ri-close-circle-fill");
+          iconElement.classList.add("ri-add-circle-fill");
+        }
+      }
+    </script>
+  </body>
+</html>
